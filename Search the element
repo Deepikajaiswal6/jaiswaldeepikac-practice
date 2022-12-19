@@ -1,0 +1,60 @@
+Write a C program to search an element whether it is present in the array or not:
+Input & Output Format:
+
+Input consists of 2 integer and 1 array.
+
+First input consists of a size of an array.
+
+second give the array elements as input.
+
+Third input consists of the element that you want to search.
+
+Output consists of a string. 
+
+If the element is present print the value and display " is present in the array" or else 
+
+"is not present in the array"
+
+Sample Input:
+3
+
+10
+
+15 
+
+5
+
+10
+
+Sample Output:
+
+10 is present in the array
+Program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,ele,i,c;
+    cin>>a;
+    int b[a];
+    for(i=0;i<a;i++)
+    {
+        cin>>b[i];
+    }
+    cin>>ele;
+    for(i=0;i<a;i++)
+    {
+        if(b[i]==ele)
+        {
+            c=1;
+        }
+    } 
+    if(c==1)
+    {
+         cout<<ele<<" is present in the array";
+    }
+    else
+    {
+         cout<<ele<<" is not present in the array";   
+    }
+}
