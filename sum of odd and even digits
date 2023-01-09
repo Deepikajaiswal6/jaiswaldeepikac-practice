@@ -1,0 +1,29 @@
+Question:
+To find the sum of odd and even terms in a given digit
+Sample output:
+1234567
+16 12
+Program:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int num,num1,num2,sum1=0,sum2=0;
+    cin>>num;
+    while(num>0)
+    {
+        num2=num%10;
+        num1=num/10;
+        if(num1%2==0)
+        {
+            sum1=sum1+num2;
+        }
+        else
+        {
+            sum2=sum2+num2;
+        }
+        num=num1;
+        
+    }
+    cout<<sum1<<" "<<sum2;
+}
